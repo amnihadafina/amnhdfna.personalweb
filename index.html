@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <title>Main Page</title>
+    <link rel="icon" href="tabpic.png" type="image/png">
+    
+    <style>
+        
+        body {
+        
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            line-height: 1.2;
+        }
+
+        
+        .menu {
+            position: sticky;
+            top: 0;
+            background-color: #A09EBB;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 0;
+        
+                }
+
+        .menu a {
+            color: #F7F3E3;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            transition: color 0.3s ease; 
+        }
+
+        .menu a:hover {
+            color: #E9DED3;
+            transform: scale(1.1); /*menu pop up bila click */
+        }
+
+        
+        .home {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f4f1e8;
+            background-image:url('bg2.png'); /* link imej */    
+            background-size: cover; /* Buat imej memenuhi ruang */
+            color: #333;
+        }
+
+        .home img {
+            max-width: 180px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .home h1 {
+            margin: 0;
+            font-size: 40px;
+            color: #9b4819;
+        }
+
+        .home p {
+            font-size: 18px;
+            color: #666;
+            margin: 10px 4 4;
+        }
+
+        
+        .home-details {
+            margin-top: 20px;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #f5ebe0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            color: #666;
+        }
+
+       
+       .home-details h2
+        {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #555;
+              text-align: right;
+        }
+
+        .home-details p {
+            margin: 0;
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        
+        .clock-container {
+            position: fixed;
+            top: 60px; 
+            left: 20px; 
+            padding: 10px;
+            text-align: center;
+            z-index: 999;
+        }
+
+        .clock {
+            font-size: 20px;
+            font-weight: bold;
+            color: #7d4f50;
+            margin: 0;
+        }
+
+        .date {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0 0;
+        }
+        
+        
+     /* Footer */
+        footer {
+            text-align: center;
+            font-size:10px;
+             color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+           }
+    
+        
+    </style>
+</head>
+<body>
+
+   
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="boutmetable.html">About Me</a>
+        <a href="eduamni.html">Education</a>
+        <a href="iman.html">Association</a>
+        <a href="famfriend.html">Family & friends</a>
+        <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+    </div>
+
+
+    <div class="clock-container">
+        <p class="clock" id="clock">00:00:00</p>
+        <p class="date" id="date">January 1, 2024</p>
+    </div>
+    
+    <script>
+        function updateClock() {
+            const now = new Date();
+
+            // Get hours, minutes, and seconds
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+
+            // Add leading zero if the value is less than 10
+            hours = hours < 10 ? "0" + hours : hours;
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            // Update clock display
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+
+            // Get current date
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const date = now.toLocaleDateString(undefined, options);
+            document.getElementById('date').textContent = date;
+        }
+
+        // Update clock every second
+        setInterval(updateClock, 1000);
+
+        // Initialize clock on page load
+        updateClock();
+        
+    </script>
+
+
+
+   
+    <div class="home">
+        <img src="amni.jpg">
+        <h1><i>Hello, and Welcome to Amni’s Little Universe!</i></h1>
+        <p>A little about myself...</p>
+
+
+        <div class="audio-player">
+         <audio controls>
+         <source src="golden hour.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+            </audio>
+        </div>
+
+
+       
+        <div class="home-details">
+            <h2>السَّلَامُ عَلَيْكُمْ</h2>
+            <p>Hi, I'm Amni Hadafina , I'm currently pursuing a Diploma in Information Management at UiTM Merbok.</p>
+            <p>This website is created for my IMD318 assignment under the guidance of Sir Mahadi Bin Mahmood. I hope you guys enjoy exploring my work!</p>
+        </div>
+        <footer>
+    &copy; 2024 Amni Hadafina Abd Ghani. All Rights Reserved.
+</footer>
+
+    </div>
+</body>
+</html>

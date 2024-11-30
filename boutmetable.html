@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>About Me</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-image: url('bg2.png'); /* Background image */
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #A09EBB;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .menu a {
+            color: #F7F3E3;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .menu a:hover {
+            color: #E9DED3;
+            transform: scale(1.1);
+        }
+
+        
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            margin: 80px auto 0;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+       
+        .aboutme {
+            background-color: #f8edeb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 45%; /* Occupy 48% width */
+            text-align: justify;
+        }
+
+        .aboutme h1 {
+            color: #7d4f50;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .aboutme p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        
+        .table-container {
+            background-color: #f0e6ef;   
+             padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 40%; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 15px;
+             
+        }
+
+        th,
+        td {
+            padding: 10px 20px;
+            text-align: left;
+            font-size: 14px;
+             
+        }
+
+        th {
+            background-color: #eac4d5;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f3eaff;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            color: #a64153;
+        }
+
+        caption {
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        
+        footer {
+            text-align: center;
+            font-size: 12px;
+            padding: 10px;
+            background-color: #f5ebe0;
+            color: #7d4f50;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="boutmetable.html">About Me</a>
+        <a href="eduamni.html">Education</a>
+        <a href="iman.html">Association</a>
+        <a href="famfriend.html">Family & friends</a>
+        <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+    </div>
+
+    
+    <div class="content-container">
+        <!-- About Me Section -->
+        <div class="aboutme">
+            <h1>About Me</h1>
+            <p>Hi and Assalamualaikum! My name is Amni Hadafina binti Abd Ghani. I was born on January 5, 2004, at Hospital Tuanku Fauziah, Kangar, Perlis, and I come from the smallest yet most charming state in Malaysia—Perlis Indera Kayangan. Born and raised in this serene state, I’ve always felt a deep connection to its peaceful vibe.</p>
+            <p>I come from a loving family of six, including my parents. As the eldest of four siblings, I’ve embraced my role as the big sister with pride and responsibility. My favorite color? Black! It’s my go-to for almost everything because it gives me a sense of comfort and confidence.</p>
+            <p>When it comes to personality, I’d describe myself as a happy-go-lucky person who cherishes nature and adventure. I often challenge myself to step out of my comfort zone, trying new things to sharpen my soft skills and broaden my horizons.</p>
+            <p>Currently, I’m pursuing my Diploma in Information Management at UiTM Merbok, Kedah. If all goes as planned, I’ll be graduating in 2025—InshaAllah! My diploma journey has been a rollercoaster of highs and lows, but every moment has been truly rewarding. I’m incredibly grateful for the unwavering support of my family and friends, who motivate me to keep pushing forward. Alhamdulillah a’la kulli hal :) </p>
+        </div>
+
+       
+        <div class="table-container">
+            <table>
+                <caption>Biodata</caption>
+                <thead>
+                    <tr>
+                        <th>Information</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Full Name</td>
+                        <td>Amni Hadafina Binti Abd Ghani</td>
+                    </tr>
+                    <tr>
+                    <td>Date of Birth</td>
+                        <td>5 January 2004</td>
+                    </tr>
+                    <tr>
+
+                        <td>Hometown</td>
+                        <td>Arau, Perlis</td>
+                    </tr>
+                    <tr>
+                        <td>University</td>
+                        <td><a href="https://kedah.uitm.edu.my/" target="_blank">UiTM Kedah Official Website</a></td>
+                    </tr>
+                    <tr>
+                        <td>Program</td>
+                        <td>Diploma in Information Management</td>
+                    </tr>
+                    <tr>
+                        <td>Hobby</td>
+                        <td>Love cooking,Enjoy reading books & Passion for photography</td>
+                    </tr>
+                    <tr>
+                     <td>My go-to apps for discovering creative ideas:</td>
+                    <td>
+                    <ul>
+                <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
+                <li><a href="https://www.canva.com/" target="_blank">Canva</a></li>
+                </ul>
+                </td>
+                </tr>             
+                <tr>
+
+                     <td>Favorite Color</td>
+                        <td>Black & soft purple</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+    <footer>
+        &copy; 2024 Amni Hadafina Abd Ghani. All Rights Reserved.
+    </footer>
+</body>
+
+</html>

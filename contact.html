@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+       <title>Contact Me</title>
+    <style>
+         body {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('wallcontact.png');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        /* Sticky Menu */
+        .menu {
+            position: sticky;
+            top: 0;
+            background-color: #A09EBB;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 0;
+        }
+
+        .menu a {
+            color: #F7F3E3;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            transition: color 0.3s ease; 
+        }
+
+        .menu a:hover {
+            color: #E9DED3;
+            transform: scale(1.1);
+        }
+
+
+        h1 {
+            color: #7d4f50;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .contact-item {
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-item img {
+            width: 200px;
+            height: 200px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-item img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-item p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 12px;
+            padding: 10px;
+            background-color: #f5ebe0;
+            color: #7d4f50;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+ <!-- Sticky Menu -->
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="boutmetable.html">About Me</a>
+        <a href="eduamni.html">Education</a>
+        <a href="iman.html">Association</a>
+        <a href="famfriend.html">Family & friends</a>
+        <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+
+    </div>
+
+
+
+
+    <h1>Contact Me</h1>
+    <div class="contact-container">
+        <!-- Instagram -->
+        <div class="contact-item">
+            <a href="https://www.instagram.com/amnhdfna" target="_blank">
+                <img src="insta.png" alt="Instagram">
+            </a>
+            <p>Instagram</p>
+        </div>
+        <!-- WhatsApp -->
+        <div class="contact-item">
+            <a href="https://wa.me/60175204045" target="_blank">
+                <img src="wasap.jpeg" alt="WhatsApp">
+            </a>
+            <p>WhatsApp</p>
+        </div>
+        <!-- TikTok -->
+        <div class="contact-item">
+            <a href="https://www.tiktok.com/@seketulhawaaa" target="_blank">
+                <img src="tiktok.jpg" alt="TikTok">
+            </a>
+            <p>TikTok</p>
+        </div>
+        <!-- Email -->
+        <div class="contact-item">
+            <a href="mailto:amnihadafina@gmail.com">
+                <img src="email.jpeg" alt="Email">
+            </a>
+            <p>Email</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Amni Hadafina Abd Ghani. All Rights Reserved.
+    </footer>
+</body>
+
+</html>

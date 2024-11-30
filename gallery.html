@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Gallery</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-image: url('wallcontact.png');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+
+        }
+
+      
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #A09EBB;
+            padding: 10px 0px;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .menu a {
+            color: #F7F3E3;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .menu a:hover {
+            color: #E9DED3;
+            transform: scale(1.1);
+        }
+
+       
+        .caption-box {
+            max-width: 800px;
+            margin: 100px auto 20px;
+            background-color: #f8edeb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .caption-box h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #7d4f50;
+        }
+
+        .caption-box p {
+            margin: 10px 0 0;
+            font-size: 10px;
+            color: #555;
+        }
+
+        
+        .gallery-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img,
+        .gallery-item video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+       
+        footer {
+            text-align: center;
+            font-size: 12px;
+            padding: 10px;
+            background-color: #f5ebe0;
+            color: #7d4f50;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="boutmetable.html">About Me</a>
+        <a href="eduamni.html">Education</a>
+        <a href="iman.html">Association</a>
+        <a href="famfriend.html">Family & friends</a>
+        <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+
+    </div>
+
+   
+    <div class="caption-box">
+        <h1>Welcome to My Gallery</h1>
+        <p>Photography is one of my favorite hobbies, and nature is my ultimate muse. To me, admiring the beauty of Allah’s creations is a powerful way to reflect on His greatness. My shots may not be flawless, but they bring me peace and serve as a soothing therapy. Every photo and video you see here is captured through the lens of my Google Pixel</p>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery-container">
+        <!-- Images -->
+        <div class="gallery-item">
+            <img src="gal1.jpg" alt="Nature 1">
+        </div>
+        <div class="gallery-item">
+            <img src="gal2.jpg" alt="Nature 2">
+        </div>
+        <div class="gallery-item">
+            <img src="gal3.jpg" alt="Nature 3">
+        </div>
+        <div class="gallery-item">
+            <img src="gal4.jpg" alt="Nature 4">
+        </div>
+        <div class="gallery-item">
+            <img src="gal5.jpg" alt="Nature 5">
+        </div>
+        <div class="gallery-item">
+            <img src="gal8.jpg" alt="Nature 6">
+        </div>
+        <div class="gallery-item">
+            <img src="gal7.jpg" alt="Nature 7">
+        </div>
+        <div class="gallery-item">
+            <img src="gal6.jpg" alt="Nature 8">
+        </div>
+        <div class="gallery-item">
+            <img src="gal9.jpg" alt="Nature 9">
+        </div>
+        <div class="gallery-item">
+            <img src="gal10.jpg" alt="Nature 10">
+        </div>
+
+        
+        <div class="gallery-item">
+            <video controls>
+                <source src="vid1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video controls>
+                <source src="vid2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video controls>
+                <source src="vid3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video controls>
+                <source src="vid4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video controls>
+                <source src="vid5.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+   
+    <footer>
+        &copy; 2024 Amni Hadafina Abd Ghani. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
